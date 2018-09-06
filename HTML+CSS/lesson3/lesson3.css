@@ -1,0 +1,53 @@
+/*div {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: black;
+}*/
+
+#only {
+	background-color: red;
+}
+#only1 {
+	background-color: green;
+}
+
+/*roseOnly
+
+darryRing fo*/
+
+.demo {
+	background-color: yellow;
+}
+.demo1 {
+	color: #f40;
+}
+
+div {
+	background-color: cyan!important;
+}
+span {
+	color: #f40;
+	font-weight: bold;
+}
+
+/** {
+	background-color: green;
+}*/
+
+/*#aaa {
+	background-color: red;
+}*/
+.dem {
+	background-color: green;
+}
+/*属性选择器*/
+[id] {
+
+}
+
+[class] {
+
+}
+
+

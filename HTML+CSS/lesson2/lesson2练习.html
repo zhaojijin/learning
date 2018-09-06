@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>输入框练习</title>
+
+	<style type="text/css">
+		
+		input {
+			border: 1px solid #f40;
+		}
+
+	</style>
+
+</head>
+<body>
+	<form method="get">
+		<p>
+			请输入姓名：<input type="test" name="userName" value="请输入姓名" style="color: #999;" onfocus="if (this.value=='请输入姓名') {this.value=''; this.style.color='#424242'}" onblur="if (this.value=='') {this.value='请输入姓名';this.style.color='#999'}">
+
+		</p>
+		
+		<p>
+			请输入密码：<input type="password" name="password">
+		
+		</p>
+		<input type="submit" name="">
+
+	</form>
+
+</body>
+</html>

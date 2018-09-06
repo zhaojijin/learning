@@ -1,0 +1,200 @@
+/*
+	父子选择器/派生选择器
+	父子选择器不仅限于标签父子关系，也可以用其他的（class id...）
+*/
+div span {
+	background-color: green;
+}
+
+strong em {
+	background-color: red;
+}
+
+#qq .box em {
+	color: yellow;
+}
+
+/*div 下所有的em便签*/
+
+div em {
+	background-color: red;
+}
+/*直接子元素选择器*/
+
+div > em {
+	background-color: green;
+}
+
+/*--------------------------------------*/
+
+/*浏览器是怎么快速找到的？*/
+/*从右向左最快*/
+section div ul li em {
+	background-color: red;
+}
+/*--------------------------------------*/
+/*让2变成红色*/
+/*并列选择器*/
+div.demo {
+	background-color: red;
+}
+
+/*多种选择器选中em*/
+
+#only {
+	background-color: red;
+}
+.content em {
+	background-color: green;
+}
+
+.wrapper > .content > .box {
+	background-color: brown;
+}
+
+div.wrapper > div[class="content"] > #only.box {
+	background-color: yellow;
+}
+
+/*--------------------------------------*/
+
+/*100  1 权重相加*/
+#idDiv p.classP {
+	background-color: red!important;
+}
+/*10 		10 权重相加*/ 
+.classDiv .classP#idP {
+	background-color: green!important;
+}
+
+/*分组选择器*/
+
+em,
+strong,
+span {
+	background-color: red;
+}
+
+.demo1,
+.demo2 {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+}
+.demo1 {
+	background-color: brown;
+}
+
+div {
+	/* 设置的是宽还是高？ */
+	/* 设置的是字体的高 */
+	font-size: 20px;
+	/* lighter normal bold bolder 100 200 300 -- 900 
+	和字体包有关，如果字体包里面没有加粗则不好使*/
+	/*font-weight: bold;*/
+	font-style: italic;
+	font-family: cursive;/*arial：乔布斯发明的*/
+	color: #f40;
+	color: rgb(255,0,0);
+	/*border width border-style border-color*/
+	border: 1px solid black;
+	border-width: 1px;
+	/*
+	solid 实体
+	dotted 点状虚线
+	dashed 条状虚线
+	*/
+	border-style: dashed;
+	
+
+}
+
+/*
+	光学三原色：红绿蓝  拼在一起光的白色
+	美术三原色：红黄蓝 
+	我们的是光学三原色
+	 r   	 g       b
+
+	00-ff  00-ff  00-ff
+	三原色可以简写：如果每两位都是重复的，我们可以简写为3位
+*/
+
+/*
+	1.土鳖式（纯英文单词 red,green,brown...）
+	2.颜色代码
+	3.颜色函数
+	rgb()
+*/
+
+/*transparent 透明色*/
+#border {
+	width: 10px;
+	height: 10px;
+	border: 100px solid black;
+	border-left-color: red;
+	border-top-color: green;
+	border-right-color: blue;
+}
+
+#border1 {
+	width: 0px;
+	height: 0px;
+	border: 100px solid black;
+	border-left-color: transparent;
+	border-top-color: transparent;
+	border-right-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
