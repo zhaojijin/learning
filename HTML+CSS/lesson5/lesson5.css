@@ -1,6 +1,261 @@
 div {
+	border: 1px solid black;
+	text-align: left; /*对其方式*/
+	height: 70px;
+	line-height: 20px;
+	text-indent: 2em; 
+	/*
+		单位：
+		1m cm mm nm um 这些是绝对单位
+		px：像素单位一个像素只能显示一个颜色，每英寸所能容纳的垂直像素点数 是相对单位
+		em：相对单位
+		1em = 1*font-size；
+	*/
+	line-height: 1.2em;
+}
+/*span {
+	text-decoration: line-through;
+}
+del {
+	text-decoration: none;
+}*/
+span {
+	color: rgb(0,0,238);
+	text-decoration: underline;
+	/*text-decoration: overline;*/
+	cursor: pointer;
+	cursor: help;
+	cursor: e-resize; /*可查*/
+}
+
+a {
+	text-decoration: none;
+}
+
+/*伪类选择器之一*/
+a:hover {
+	background-color: orange;
+	text-decoration: underline;
+	border-radius: 8px;
+	color : #fff;
+	font-size = 16px;
+	font-family: arial;
+	font-weight: lighter;
+}
+
+
+span {
+	display: inline;
+}
+
+
+div {
+	display: block;
+}
+
+img {
+	display: inline-block;
+	margin-left: -5.5px;
+}
+
+
+.box1 {
 	width: 100px;
 	height: 100px;
-	border: 1px solid black;
-	/*border-color: black;*/
+	background-color: red;
 }
+
+.box2 {
+	width: 200px;
+	height: 200px;
+	background-color: green;
+}
+
+.box3 {
+	width: 300px;
+	height: 300px;
+	background-color: gray;
+}
+
+.box4 {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+}
+.box5 {
+	width: 200px;
+	height: 200px;
+	background-color : red; 
+}
+
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
+}
+
+.gray {
+	background-color: gray;
+}
+
+.size1 {
+	width: 100px;
+	height: 100px;
+}
+
+.size2 {
+	width: 200px;
+	height: 200px;
+}
+
+.size3 {
+	width: 300px;
+	height: 300px;
+}
+
+em {
+	font-style: normal;
+	color: #c00;
+}
+
+ul {
+	list-style: none;
+/*	padding: 0;
+	margin: 0;*/
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+.boxx {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border: 10px solid black;
+	padding: 10px;
+	margin: 100px;
+}
+
+.wrapper {
+	border: 10px solid green;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	/*padding: 100px 150px; */
+	/*四个值：上 右 下 左
+	  个值：上 左右 下
+	  2个值：上下 左右 */
+	padding-left: 100px;
+	padding-top: 100px;
+	border-width: 10px 20px 30px 40px;
+}
+.content {
+	width: 100px;
+	height: 100px;
+	background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
